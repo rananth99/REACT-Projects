@@ -1,0 +1,38 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+.row__title{
+    font-size: 18px;
+    font-weight: bold;
+}
+.row__posters{
+    display: flex;
+    /* these 2 lines is to hide the scrolling vertically
+    and to allow horizontal scrolling */
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+/* this css is basically to hide the scrollbar but
+to keep the functionality */
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+.row__poster{
+    object-fit: contain;
+    width:100%;
+    max-height:100px;
+    transition: transform 450ms;
+    margin-right: 5px;
+}
+.row__poster:hover{
+    transform: scale(1.08);
+}
+.row__posterLarge{
+    width:100%;
+    max-height: 250px;
+}
+.row__posterLarge:hover{
+    transform: scale(1.09);
+}
